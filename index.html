@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Workforce CSS Site Template</title>
+	<title>ShineChic Clothing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
@@ -283,7 +283,7 @@
 						<hr>
 						<h4>Whether you need support with an order, have inquiries about our products, or want to share your experience, our team is ready to help.</h4>
 						<h4>Phone: <a href="tel: +8618172851178"><span class="list-content">+8618172851178</span></a></h4>
-						<h4>Email: <a href="mailto:shinechicclothing@gmail.com" rel="noopener">shinechicclothing@gmail.com</h4>
+						<h4>Email: <a href="mailto:shinechicclothing@gmail.com" rel="noopener">shinechicclothing@gmail.com</a></h4>
 					</div>	
 					<!-- <form action="#" method="post" role="form">
 						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
@@ -461,8 +461,8 @@
 
 		// 获取关闭按钮并添加点击事件
 		const closeButton = document.querySelector(".close");
-		closeButton.addEventListener("click", function() {
-			// 隐藏模态框
+		closeButton.addEventListener("click", function(event) {
+			event.stopPropagation(); // 阻止事件冒泡
 			const modal = document.getElementById("myModal");
 			modal.style.display = "none";
 		});
